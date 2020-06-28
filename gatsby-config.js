@@ -17,6 +17,14 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-remark',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'illustrations',
+        path: `${__dirname}/src/images/illustrations`,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -27,7 +35,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'content',
+        name: 'contentz',
         path: `${__dirname}/src/content`,
       },
     },

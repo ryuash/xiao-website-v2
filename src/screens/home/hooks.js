@@ -4,27 +4,47 @@ import {
 } from 'gatsby'
 
 export const useHomeHook = () => {
-  const data = useStaticQuery(
+  const {
+    data
+  } = useStaticQuery(
     graphql`
     query {
-      profilePicture: file(relativePath: {eq: "duck_icon.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+      data: markdownRemark(fileAbsolutePath: {regex: "/home.md/"}) {
+        frontmatter {
+          linkedin
+          title
+          about
+          contact
+          profileImg {
+            childImageSharp {
+              fluid(maxWidth: 700) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
-      }
-
-      content: markdownRemark(fileAbsolutePath: { regex: "/home.md/" }) {
-        frontmatter {
-          title
-        }
-        excerpt
       }
     }
     `,
   )
+  const {
+    frontmatter: {
+      linkedin,
+      about,
+      title,
+      contact,
+      profileImg: {
+        childImageSharp: {
+          fluid: profileImg
+        }
+      }
+    }
+  } = data
+
   return {
-    data
+    about,
+    title,
+    profileImg,
+    contact,
   }
 }

@@ -31,10 +31,8 @@ const GlobalCSS = createGlobalStyle`
     width: 100%;
     min-height: 100%;
     overflow-x: hidden;
-    // font-family: ${fonts.openSans};
     font-weight: 300;
-    line-height: 1.3;
-    // color: ${colors.font};
+    line-height: 1.5;
   }
 
   h1,
@@ -45,7 +43,6 @@ const GlobalCSS = createGlobalStyle`
   h6 {
     font-weight: 600;
     margin: 0 0 2rem 0;
-    // font-family: ${fonts.lato};
   }
 
   svg {
