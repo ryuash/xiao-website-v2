@@ -1,10 +1,11 @@
 import React from 'react'
+import { NavContainer } from './styles'
 
 const Nav = () => {
   return (
-    <div>
-      <h1>nav</h1>
-    </div>
+    <NavContainer>
+      nav
+    </NavContainer>
   )
 }
 

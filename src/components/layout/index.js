@@ -4,7 +4,7 @@ import {
   SEO
 } from '@components'
 import { GlobalCSS } from '@styles'
-import { BodyCSS } from './styles'
+import { BodyCSS, LayoutCSS } from './styles'
 
 const Layout = (props) => {
   const {
@@ -16,11 +16,13 @@ const Layout = (props) => {
     <>
       <GlobalCSS />
       <SEO title={title} />
-      <Nav />
-      {/* // body */}
-      <BodyCSS>
-        {children}
-      </BodyCSS>
+      <LayoutCSS>
+        <Nav />
+        {/* // body */}
+        <BodyCSS>
+          {children}
+        </BodyCSS>
+      </LayoutCSS>
     </>
   )
 }

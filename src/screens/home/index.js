@@ -4,11 +4,13 @@ import { Layout, Image } from '@components'
 import { LinkedInIcon } from '@icons'
 import { useHomeHook } from './hooks'
 import {
-  ProfileContainer,
-  AboutContainer,
-  AboutContainerText,
-  ContactContainerText,
-  SocialMediaContainer
+  ProfileContainerCSS,
+  AboutContainerCSS,
+  AboutContainerTextCSS,
+  ContactContainerTextCSS,
+  SocialMediaContainerCSS,
+  HomeContainerCSS,
+  ImgCSS,
 } from './styles'
 
 const Home = () => {
@@ -22,29 +24,31 @@ const Home = () => {
 
   return (
     <Layout title={title}>
-      <div>
-        <ProfileContainer>
-          <Img fluid={profileImg} />
-        </ProfileContainer>
-        <AboutContainer>
-          <AboutContainerText>
-            {about}
-          </AboutContainerText>
-          <br />
-          <ContactContainerText>
-            {contact}
-          </ContactContainerText>
-          <SocialMediaContainer>
-            <a
-              href={linkedin}
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-            >
-              <LinkedInIcon />
-            </a>
-          </SocialMediaContainer>
-        </AboutContainer>
-      </div>
+      <HomeContainerCSS>
+        <ProfileContainerCSS>
+          <ImgCSS>
+            <Img fluid={profileImg} />
+          </ImgCSS>
+          <AboutContainerCSS>
+            <AboutContainerTextCSS>
+              {about}
+            </AboutContainerTextCSS>
+            <br />
+            <ContactContainerTextCSS>
+              {contact}
+            </ContactContainerTextCSS>
+            <SocialMediaContainerCSS>
+              <a
+                href={linkedin}
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <LinkedInIcon />
+              </a>
+            </SocialMediaContainerCSS>
+          </AboutContainerCSS>
+        </ProfileContainerCSS>
+      </HomeContainerCSS>
     </Layout>
   )
 }
