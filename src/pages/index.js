@@ -1,5 +1,8 @@
-import React from "react"
+import React from 'react'
+import Home from '@screens/home'
 
-export default function Home() {
-  return <div>Hello world!</div>
+export default () => {
+  return (
+    <Home />
+  )
 }
