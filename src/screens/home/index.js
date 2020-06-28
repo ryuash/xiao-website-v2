@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { Layout, Image } from '@components'
+import { Layout } from '@components'
 import { LinkedInIcon } from '@icons'
 import { useHomeHook } from './hooks'
 import {

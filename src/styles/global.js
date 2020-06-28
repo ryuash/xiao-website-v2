@@ -54,6 +54,12 @@ const GlobalCSS = createGlobalStyle`
     color: inherit;
     text-decoration: none;
   }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 `
 
 export default GlobalCSS

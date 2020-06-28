@@ -18,6 +18,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         '@icons': path.resolve(__dirname, 'src/components/icons'),
         '@fonts': path.resolve(__dirname, 'src/styles/font_files'),
         '@static': path.resolve(__dirname, 'static'),
+        '@utils': path.resolve(__dirname, 'src/utils'),
       },
     },
   })

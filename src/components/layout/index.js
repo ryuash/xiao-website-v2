@@ -17,8 +17,8 @@ const Layout = (props) => {
       <GlobalCSS />
       <SEO title={title} />
       <LayoutCSS>
-        <Nav />
         {/* // body */}
+        <Nav />
         <BodyCSS>
           {children}
         </BodyCSS>

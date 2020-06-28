@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import { media, theme } from '@src/styles'
+import { media, theme, mixins } from '@src/styles'
 
 const { nav } = theme
 
 export const HomeContainerCSS = styled.div`
+  ${mixins.pageBottomPadding}
   min-height: calc(100vh - ${nav.height});
   ${media.tablet`
     display: flex;

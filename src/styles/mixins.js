@@ -27,6 +27,9 @@ const mixins = {
     -moz-box-shadow: none;
     box-shadow: none;
   `,
+  pageBottomPadding: css`
+    padding-bottom: 3rem;
+  `
 }
 
 export default mixins
