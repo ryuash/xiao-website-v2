@@ -16,9 +16,13 @@ export const useLightboxHook = (images) => {
     }
   }
 
-
   const toggleLightbox = () => {
     setShowLightbox(!showLightbox)
+  }
+
+  const handleOnClick = (index) => {
+    setSelectedIdx(index)
+    toggleLightbox()
   }
 
   return {
@@ -28,5 +32,6 @@ export const useLightboxHook = (images) => {
     handlePrevImage,
     handleNextImage,
     setSelectedIdx,
+    handleOnClick,
   }
 }

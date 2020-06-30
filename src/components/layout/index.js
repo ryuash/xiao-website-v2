@@ -1,15 +1,17 @@
 import React from 'react'
 import {
   Nav,
-  SEO
+  SEO,
+  Footer,
 } from '@components'
 import { GlobalCSS } from '@styles'
-import { BodyCSS, LayoutCSS } from './styles'
+import { LayoutCSS } from './styles'
 
 const Layout = (props) => {
   const {
     children,
     title,
+    hideFooter = false
   } = props
 
   return (
@@ -19,9 +21,8 @@ const Layout = (props) => {
       <LayoutCSS>
         {/* // body */}
         <Nav />
-        <BodyCSS>
-          {children}
-        </BodyCSS>
+        {children}
+        {!hideFooter && <Footer />}
       </LayoutCSS>
     </>
   )

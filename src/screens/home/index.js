@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { Layout } from '@components'
+import { Layout, Footer } from '@components'
 import { LinkedInIcon } from '@icons'
 import { useHomeHook } from './hooks'
 import {
@@ -23,7 +23,10 @@ const Home = () => {
   } = useHomeHook()
 
   return (
-    <Layout title={title}>
+    <Layout
+      title={title}
+      hideFooter
+    >
       <HomeContainerCSS>
         <ProfileContainerCSS>
           <ImgCSS>
@@ -48,6 +51,7 @@ const Home = () => {
             </SocialMediaContainerCSS>
           </AboutContainerCSS>
         </ProfileContainerCSS>
+        <Footer />
       </HomeContainerCSS>
     </Layout>
   )

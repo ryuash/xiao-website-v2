@@ -20,6 +20,6 @@ const theme = {
     robotoMono: 'Roboto Mono, Monaco, monospace',
     lato: 'Lato, Roboto, Monaco, monospace',
   },
-};
+}
 
 export default theme

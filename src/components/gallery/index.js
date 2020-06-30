@@ -17,8 +17,6 @@ const Gallery = (props) => {
   }
   return (
     <DesktopGallery
-      showLightbox={showLightbox}
-      setShowLightbox={setShowLightbox}
       {...props}
     />
   )

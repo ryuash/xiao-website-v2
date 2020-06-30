@@ -1,5 +1,8 @@
 import { css } from 'styled-components'
 
+const MAX_WIDTH = '1024px'
+const NAV_HEIGHT = '100px'
+
 const mixins = {
   flexCenter: css`
     display: flex;
@@ -28,7 +31,14 @@ const mixins = {
     box-shadow: none;
   `,
   pageBottomPadding: css`
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
+  `,
+  bodyBase: css`
+    width: 100%;
+    padding: 0 1rem;
+    max-width: ${MAX_WIDTH};
+    min-height: calc(100vh - ${NAV_HEIGHT});
+    margin: 0 auto;
   `
 }
 

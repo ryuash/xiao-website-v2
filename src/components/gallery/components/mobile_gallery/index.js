@@ -4,14 +4,9 @@ import { MobileGalleryCSS } from './styles'
 const MobileGallery = (props) => {
   const {
     images,
-    toggleLightbox,
-    setSelectedIdx,
+    handleOnClick,
   } = props
 
-  const handleOnClick = (index) => {
-    setSelectedIdx(index)
-    toggleLightbox()
-  }
   return (
     <MobileGalleryCSS>
       {

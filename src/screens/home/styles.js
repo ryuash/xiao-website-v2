@@ -5,13 +5,13 @@ import { media, theme, mixins } from '@src/styles'
 const { nav } = theme
 
 export const HomeContainerCSS = styled.div`
-  ${mixins.pageBottomPadding}
-  min-height: calc(100vh - ${nav.height});
+  ${mixins.bodyBase}
   ${media.tablet`
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 5rem;
+    flex-direction: column;
   `}
 `
 export const ProfileContainerCSS = styled.div`

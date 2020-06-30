@@ -31,11 +31,11 @@ const Lightbox = (props) => {
 
   return (
     <LightboxCSS onClick={toggleLightbox}>
-      <CloseCSS onClick={toggleLightbox}>
+      <CloseCSS>
         <CloseIcon />
       </CloseCSS>
-      <ImageContainerCSS onClick={handleImageClick}>
-        <img src={images[selectedIdx]} />
+      <ImageContainerCSS>
+        <img src={images[selectedIdx]} onClick={handleImageClick} />
       </ImageContainerCSS>
       <IconContainerCSS>
         <span onClick={(e) => handleFutureClick(e, handlePrevImage)}>

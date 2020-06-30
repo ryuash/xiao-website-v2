@@ -3,6 +3,7 @@ import SEO from './seo'
 import Nav from './nav'
 import Gallery from './gallery'
 import Lightbox from './lightbox'
+import Footer from './footer'
 
 export {
   Layout,
@@ -10,4 +11,5 @@ export {
   Nav,
   Gallery,
   Lightbox,
+  Footer,
 }

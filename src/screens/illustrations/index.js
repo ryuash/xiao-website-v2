@@ -13,8 +13,9 @@ const Illustrations = () => {
     handlePrevImage,
     handleNextImage,
     setSelectedIdx,
+    handleOnClick,
   } = useLightboxHook(images)
-  console.log(selectedIdx)
+
   return (
     <>
       {!!showLightbox && (
@@ -32,6 +33,7 @@ const Illustrations = () => {
             images={images}
             toggleLightbox={toggleLightbox}
             setSelectedIdx={setSelectedIdx}
+            handleOnClick={handleOnClick}
           />
         </IllustrationsCSS>
       </Layout>
