@@ -31,7 +31,7 @@ export const useIllustrationsHook = () => {
         edges {
           node {
             childImageSharp {
-              fluid(maxWidth: 1500, quality: 100) {
+              fluid(maxWidth: 1400) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -42,7 +42,6 @@ export const useIllustrationsHook = () => {
     `,
   )
 
-  console.log(data, 'the data')
   const {
     data: {
       frontmatter: {
@@ -53,8 +52,11 @@ export const useIllustrationsHook = () => {
       edges
     }
   } = data
-  console.log(edges, 'images')
+
+  const images = edges.map((x) => x.node.childImageSharp.fluid)
+
   return {
-    images: []
+    title,
+    images: images,
   }
 }

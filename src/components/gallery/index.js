@@ -1,24 +1,23 @@
 import React from 'react'
-import { Lightbox } from '@components'
-import useScreensize from '@utils/screenSize'
-import DesktopGallery from './components/desktop_gallery'
-import MobileGallery from './components/mobile_gallery'
-import { sizes } from '../../styles/media'
+import { GalleryCSS, ImgOverrideCSS } from './styles'
 
 const Gallery = (props) => {
-  const { width } = useScreensize()
+  const {
+    images,
+    handleOnClick,
+  } = props
 
-  if (width < sizes.phone) {
-    return (
-      <MobileGallery
-        {...props}
-      />
-    )
-  }
   return (
-    <DesktopGallery
-      {...props}
-    />
+    <GalleryCSS>
+      {images.map((x, i) => (
+        <div className="image-item" key={i}>
+          <ImgOverrideCSS
+            fluid={x}
+            onClick={() => handleOnClick(i)}
+          />
+        </div>
+      ))}
+    </GalleryCSS>
   )
 }
 

@@ -5,7 +5,7 @@ import { useLightboxHook } from '../../components/lightbox/hooks'
 import { IllustrationsCSS } from './styles'
 
 const Illustrations = () => {
-  const { images } = useIllustrationsHook()
+  const { images, title } = useIllustrationsHook()
   const {
     showLightbox,
     toggleLightbox,
@@ -27,7 +27,9 @@ const Illustrations = () => {
           handleNextImage={handleNextImage}
         />
       )}
-      <Layout>
+      <Layout
+        title={title}
+      >
         <IllustrationsCSS>
           <Gallery
             images={images}
