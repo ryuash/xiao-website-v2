@@ -66,8 +66,8 @@ export const IconContainerCSS = styled.div`
   }
 `
 export const ImgOverrideCSS = styled(GatsbyImage)`
-  max-height: 80vh;
-  width: 100%;
+  // max-height: 80vh;
+  // width: 100%;
   ${media.tablet`
     width: auto;
   `}

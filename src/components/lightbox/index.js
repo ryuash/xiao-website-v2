@@ -38,7 +38,11 @@ const Lightbox = (props) => {
       <ImageContainerCSS>
         <span onClick={handleImageClick}>
           <ImgOverrideCSS
-            imgStyle={{ objectFit: 'contain' }}
+            imgStyle={{
+              objectFit: 'contain',
+              width: '100%',
+              maxHeight: '80vh',
+            }}
             fluid={images[selectedIdx]}
           />
         </span>
