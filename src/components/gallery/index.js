@@ -10,10 +10,13 @@ const Gallery = (props) => {
   return (
     <GalleryCSS>
       {images.map((x, i) => (
-        <div className="image-item" key={i}>
+        <div
+          className="image-item"
+          key={i}
+          onClick={() => handleOnClick(i)}
+        >
           <ImgOverrideCSS
             fluid={x}
-            onClick={() => handleOnClick(i)}
           />
         </div>
       ))}

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
+import GatsbyImage from 'gatsby-image'
 import { media } from '@styles'
 
-// const ICON_COLOR = '#1f2027'
 const ICON_COLOR = '#ffffff'
 const ICON_OPACITY = 0.4
 
@@ -19,19 +19,10 @@ export const LightboxCSS = styled.div`
   `}
 `
 
-export const ImageContainerCSS = styled.span`
+export const ImageContainerCSS = styled.div`
   padding: 1rem;
-
-  img {
-    object-fit: contain;
-    max-height: 80vh;
-  }
-
-  ${media.tablet`
-    img {
-      width: auto;
-    }
-  `}
+  max-height: 80vh;
+  width: 100%;
 `
 
 export const CloseCSS = styled.span`
@@ -73,4 +64,11 @@ export const IconContainerCSS = styled.div`
       opacity: 1;
     }
   }
+`
+export const ImgOverrideCSS = styled(GatsbyImage)`
+  max-height: 80vh;
+  width: 100%;
+  ${media.tablet`
+    width: auto;
+  `}
 `

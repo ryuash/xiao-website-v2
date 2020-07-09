@@ -8,7 +8,8 @@ import {
   LightboxCSS,
   ImageContainerCSS,
   CloseCSS,
-  IconContainerCSS
+  IconContainerCSS,
+  ImgOverrideCSS
 } from './styles'
 
 const Lightbox = (props) => {
@@ -35,7 +36,12 @@ const Lightbox = (props) => {
         <CloseIcon />
       </CloseCSS>
       <ImageContainerCSS>
-        <img src={images[selectedIdx]} onClick={handleImageClick} />
+        <span onClick={handleImageClick}>
+          <ImgOverrideCSS
+            imgStyle={{ objectFit: 'contain' }}
+            fluid={images[selectedIdx]}
+          />
+        </span>
       </ImageContainerCSS>
       <IconContainerCSS>
         <span onClick={(e) => handleFutureClick(e, handlePrevImage)}>
