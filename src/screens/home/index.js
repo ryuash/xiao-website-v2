@@ -18,8 +18,11 @@ const Home = () => {
     about,
     title,
     profileImg,
-    contact,
+    contactOne,
+    contactTwo,
+    email,
     linkedin,
+    profileAlt
   } = useHomeHook()
 
   return (
@@ -30,7 +33,10 @@ const Home = () => {
       <HomeContainerCSS>
         <ProfileContainerCSS>
           <ImgCSS>
-            <Img fluid={profileImg} />
+            <Img
+              fluid={profileImg}
+              alt={profileAlt}
+            />
           </ImgCSS>
           <AboutContainerCSS>
             <AboutContainerTextCSS>
@@ -38,7 +44,7 @@ const Home = () => {
             </AboutContainerTextCSS>
             <br />
             <ContactContainerTextCSS>
-              {contact}
+              {contactOne} <span className="bold">{email}</span> {contactTwo}
             </ContactContainerTextCSS>
             <SocialMediaContainerCSS>
               <a

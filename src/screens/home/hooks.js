@@ -14,10 +14,13 @@ export const useHomeHook = () => {
           linkedin
           title
           about
-          contact
+          contactOne
+          contactTwo
+          email
+          profileAlt
           profileImg {
             childImageSharp {
-              fluid(maxWidth: 700) {
+              fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -32,7 +35,10 @@ export const useHomeHook = () => {
       linkedin,
       about,
       title,
-      contact,
+      contactOne,
+      contactTwo,
+      email,
+      profileAlt,
       profileImg: {
         childImageSharp: {
           fluid: profileImg
@@ -45,6 +51,9 @@ export const useHomeHook = () => {
     about,
     title,
     profileImg,
-    contact,
+    contactOne,
+    contactTwo,
+    email,
+    profileAlt
   }
 }

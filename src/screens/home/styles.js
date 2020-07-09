@@ -25,17 +25,18 @@ export const AboutContainerCSS = styled.div`
   ${media.tablet`
     margin-top: 0;
     margin-left: 3rem;
-    width: 70%;
   `}
 `
 
 export const AboutContainerTextCSS = styled.p`
-  text-align: center;
 `
 
 export const ContactContainerTextCSS = styled.p`
-  text-align: center;
   margin-bottom: 2rem;
+
+  .bold {
+    font-weight: bold;
+  }
 `
 export const SocialMediaContainerCSS = styled.div`
   display: flex;
@@ -44,6 +45,10 @@ export const SocialMediaContainerCSS = styled.div`
 `
 export const ImgCSS = styled.div`
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   margin: 0 auto;
+
+  img {
+    object-fit: contain;
+  }
 `
