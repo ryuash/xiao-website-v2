@@ -1,7 +1,7 @@
 import React from 'react'
-import Illustrations from '@screens/illustrations'
+import Illustrations from '@screens/illustration'
 
-export default ({ data }) => {
+export default () => {
   return (
     <Illustrations />
   )
