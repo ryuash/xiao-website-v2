@@ -7,10 +7,10 @@ export const navItems = [
     title: 'Design',
     link: '/design'
   },
-  {
-    title: 'Animation',
-    link: '/animation'
-  },
+  // {
+  //   title: 'Animation',
+  //   link: '/animation'
+  // },
   {
     title: 'Sketchbook',
     link: '/sketchbook'

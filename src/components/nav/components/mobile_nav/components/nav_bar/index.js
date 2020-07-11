@@ -1,8 +1,7 @@
 import React from 'react'
 import {
   NavBarCSS,
-  NavBarIconCSS,
-  NavBarLogo
+  NavBarLogoCSS
 } from './styles'
 const MobileNav = (props) => {
   const {
@@ -13,9 +12,9 @@ const MobileNav = (props) => {
     <NavBarCSS
       isOpen={isOpen}
     >
-      <NavBarLogo>
+      <NavBarLogoCSS>
         <p>[ Xiao ]</p>
-      </NavBarLogo>
+      </NavBarLogoCSS>
     </NavBarCSS>
   )
 }

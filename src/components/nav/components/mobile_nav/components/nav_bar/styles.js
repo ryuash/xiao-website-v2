@@ -14,6 +14,6 @@ export const NavBarCSS = styled(NavContainerCSS)`
   padding: 1rem;
 `
 
-export const NavBarLogo = styled.div`
+export const NavBarLogoCSS = styled.div`
 
 `

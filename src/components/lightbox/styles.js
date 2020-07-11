@@ -10,6 +10,7 @@ export const LightboxCSS = styled.div`
   min-height: 100vh;
   z-index: 10;
   position: fixed;
+  top: 0;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;

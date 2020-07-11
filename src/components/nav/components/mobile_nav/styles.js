@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const NavBarIconCSS = styled.div`
   width: 27px;
   z-index: 8;
-  position: absolute;
-  top: 1rem;
+  position: fixed;
+  top: 1.5rem;
   right: 1rem;
   &:after,
   &:before,

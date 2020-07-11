@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 export const useMobileNavHook = () => {
   const [isOpen, toggleOpen] = useState(false)

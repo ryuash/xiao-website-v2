@@ -47,7 +47,7 @@ const Home = (props) => {
             <ContactContainerTextCSS>
               {contactOne} <span className="bold">{email}</span> {contactTwo}
             </ContactContainerTextCSS>
-            <SocialMediaContainerCSS>
+            {/* <SocialMediaContainerCSS>
               <a
                 href={linkedin}
                 target="_blank"
@@ -55,7 +55,7 @@ const Home = (props) => {
               >
                 <LinkedInIcon />
               </a>
-            </SocialMediaContainerCSS>
+            </SocialMediaContainerCSS> */}
           </AboutContainerCSS>
         </ProfileContainerCSS>
         <Footer />

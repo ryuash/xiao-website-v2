@@ -1,13 +1,12 @@
 import React from 'react'
 import classNames from 'classnames'
 import { useTransition } from 'react-spring'
-import { Link } from 'gatsby'
 import {
   NavBodyCSS,
   NavItemCSS,
 } from './styles'
 import { navItems } from '../../../../utils'
-
+import { Link } from '../../../../styles'
 const NavBody = (props) => {
   const {
     isOpen,
@@ -15,12 +14,6 @@ const NavBody = (props) => {
       pathname
     }
   } = props
-
-  // const overlayAnimation = useSpring({
-  //   // opacity: isOpen ? 0.7 : 0,
-  //   display: isOpen ? 'flex' : 'none',
-  //   background: isOpen ? 'rgba(255, 255, 255, 0.8)' : 'rgba(255, 255, 255, 0)'
-  // })
 
   const transitions = useTransition(isOpen, null, {
     enter: item => async (next, cancel) => {

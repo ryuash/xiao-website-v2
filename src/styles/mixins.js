@@ -30,17 +30,14 @@ const mixins = {
     -moz-box-shadow: none;
     box-shadow: none;
   `,
-  pageBottomPadding: css`
-    padding-bottom: 6rem;
-  `,
   bodyBase: css`
     width: 100%;
     padding: 1rem 1rem 0;
     max-width: ${MAX_WIDTH};
     min-height: calc(100vh - ${NAV_HEIGHT});
     margin: 0 auto;
-    margin-top: ${NAV_HEIGHT};
-  `
+    margin-top: calc(${NAV_HEIGHT} + 1rem);
+  `,
 }
 
 export default mixins
