@@ -1,9 +1,10 @@
 import React from 'react'
-import { useSpring } from 'react-spring'
 import { useMobileNavHook } from './hooks'
 import NavBar from './components/nav_bar'
+import NavBody from './components/nav_body'
+import { NavBarIconCSS } from './styles'
 
-const MobileNav = () => {
+const MobileNav = (props) => {
   const {
     isOpen,
     toggle,
@@ -11,9 +12,18 @@ const MobileNav = () => {
 
   return (
     <>
+      <NavBarIconCSS
+        onClick={toggle}
+        isOpen={isOpen}
+      >
+        <div />
+      </NavBarIconCSS>
       <NavBar
         isOpen={isOpen}
-        toggle={toggle}
+      />
+      <NavBody
+        isOpen={isOpen}
+        {...props}
       />
     </>
   )

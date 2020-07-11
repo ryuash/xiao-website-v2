@@ -27,8 +27,6 @@ export const useDesignHook = () => {
     }
     `,
   )
-  console.log('===data===')
-  console.log(data)
   const {
     data: {
       frontmatter: {

@@ -10,8 +10,9 @@ import { LayoutCSS } from './styles'
 const Layout = (props) => {
   const {
     children,
+    location,
     title,
-    hideFooter = false
+    hideFooter = false,
   } = props
 
   return (
@@ -20,7 +21,7 @@ const Layout = (props) => {
       <SEO title={title} />
       <LayoutCSS>
         {/* // body */}
-        <Nav />
+        <Nav location={location} />
         {children}
         {!hideFooter && <Footer />}
       </LayoutCSS>

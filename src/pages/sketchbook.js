@@ -1,8 +1,10 @@
 import React from 'react'
 import Sketchbook from '@screens/sketchbook'
 
-export default () => {
+export default (props) => {
   return (
-    <Sketchbook />
+    <Sketchbook
+      {...props}
+    />
   )
 }

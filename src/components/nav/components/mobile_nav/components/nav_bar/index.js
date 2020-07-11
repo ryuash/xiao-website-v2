@@ -7,7 +7,6 @@ import {
 const MobileNav = (props) => {
   const {
     isOpen,
-    toggle,
   } = props
 
   return (
@@ -17,12 +16,6 @@ const MobileNav = (props) => {
       <NavBarLogo>
         <p>[ Xiao ]</p>
       </NavBarLogo>
-      <NavBarIconCSS
-        onClick={toggle}
-        isOpen={isOpen}
-      >
-        <div />
-      </NavBarIconCSS>
     </NavBarCSS>
   )
 }

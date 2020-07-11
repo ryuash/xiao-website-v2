@@ -13,7 +13,7 @@ import {
   ImgCSS,
 } from './styles'
 
-const Home = () => {
+const Home = (props) => {
   const {
     about,
     title,
@@ -29,6 +29,7 @@ const Home = () => {
     <Layout
       title={title}
       hideFooter
+      {...props}
     >
       <HomeContainerCSS>
         <ProfileContainerCSS>

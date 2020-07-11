@@ -4,7 +4,7 @@ import { useDesignHook } from './hooks'
 import { DesignCSS } from './styles'
 import { useLightboxHook } from '../../components/lightbox/hooks'
 
-const Design = () => {
+const Design = (props) => {
   const { images, title } = useDesignHook()
   const {
     showLightbox,
@@ -29,6 +29,7 @@ const Design = () => {
       )}
       <Layout
         title={title}
+        {...props}
       >
         <DesignCSS>
           <Gallery
