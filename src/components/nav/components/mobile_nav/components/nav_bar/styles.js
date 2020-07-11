@@ -20,7 +20,7 @@ export const NavBarLogo = styled.div`
 
 export const NavBarIconCSS = styled.div`
   width: 27px;
-
+  z-index: 8;
   &:after,
   &:before,
   > div {
