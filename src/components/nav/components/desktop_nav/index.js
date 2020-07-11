@@ -22,7 +22,6 @@ const DesktopNav = (props) => {
       </NavBarLogoCSS>
       <NavItemsContainerCSS>
         {navItems.map((x) => {
-          console.log(pathname == x.link)
           return (
             <Link
               key={x.title}
