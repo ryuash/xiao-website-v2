@@ -1,11 +1,11 @@
 import React from 'react'
 import { Layout, Gallery, Lightbox } from '@components'
-import { useIllustrationHook } from './hooks'
+import { useDesignHook } from './hooks'
+import { DesignCSS } from './styles'
 import { useLightboxHook } from '../../components/lightbox/hooks'
-import { IllustrationsCSS } from './styles'
 
-const Illustrations = () => {
-  const { images, title } = useIllustrationHook()
+const Design = () => {
+  const { images, title } = useDesignHook()
   const {
     showLightbox,
     toggleLightbox,
@@ -30,17 +30,17 @@ const Illustrations = () => {
       <Layout
         title={title}
       >
-        <IllustrationsCSS>
+        <DesignCSS>
           <Gallery
             images={images}
             toggleLightbox={toggleLightbox}
             setSelectedIdx={setSelectedIdx}
             handleOnClick={handleOnClick}
           />
-        </IllustrationsCSS>
+        </DesignCSS>
       </Layout>
     </>
   )
 }
 
-export default Illustrations
+export default Design

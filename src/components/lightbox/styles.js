@@ -10,7 +10,7 @@ export const LightboxCSS = styled.div`
   min-height: 100vh;
   z-index: 10;
   position: fixed;
-  background: rgba(74, 48, 48, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,8 +66,6 @@ export const IconContainerCSS = styled.div`
   }
 `
 export const ImgOverrideCSS = styled(GatsbyImage)`
-  // max-height: 80vh;
-  // width: 100%;
   ${media.tablet`
     width: auto;
   `}

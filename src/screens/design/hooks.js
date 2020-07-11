@@ -3,16 +3,16 @@ import {
   useStaticQuery,
 } from 'gatsby'
 
-export const useIllustrationHook = () => {
+export const useDesignHook = () => {
   const data = useStaticQuery(
     graphql`
     query {
-      data: markdownRemark(fileAbsolutePath: {regex: "/illustration.md/"}) {
+      data: markdownRemark(fileAbsolutePath: {regex: "/design.md/"}) {
         frontmatter {
           title
         }
       },
-      images: allFile(filter: {sourceInstanceName: {eq: "illustration"}}) {
+      images: allFile(filter: {sourceInstanceName: {eq: "design"}}) {
         edges {
           node {
             childImageSharp {
