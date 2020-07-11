@@ -12,9 +12,10 @@ export const useDesignHook = () => {
           title
         }
       },
-      images: allFile(filter: {sourceInstanceName: {eq: "design"}}) {
+      images: allFile(filter: {sourceInstanceName: {eq: "design"}}, sort: {fields: [relativePath], order: ASC}) {
         edges {
           node {
+            relativePath
             childImageSharp {
               fluid(maxWidth: 1400) {
                 ...GatsbyImageSharpFluid
@@ -26,7 +27,8 @@ export const useDesignHook = () => {
     }
     `,
   )
-
+  console.log('===data===')
+  console.log(data)
   const {
     data: {
       frontmatter: {

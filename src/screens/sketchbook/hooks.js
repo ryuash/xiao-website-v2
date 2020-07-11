@@ -12,7 +12,7 @@ export const useSketchbookHook = () => {
           title
         }
       },
-      images: allFile(filter: {sourceInstanceName: {eq: "sketchbook"}}) {
+      images: allFile(filter: {sourceInstanceName: {eq: "sketchbook"}}, sort: {fields: [relativePath], order: ASC}) {
         edges {
           node {
             childImageSharp {

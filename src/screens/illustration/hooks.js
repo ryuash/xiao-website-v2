@@ -12,7 +12,7 @@ export const useIllustrationHook = () => {
           title
         }
       },
-      images: allFile(filter: {sourceInstanceName: {eq: "illustration"}}) {
+      images: allFile(filter: {sourceInstanceName: {eq: "illustration"}}, sort: {fields: [relativePath], order: ASC}) {
         edges {
           node {
             childImageSharp {
