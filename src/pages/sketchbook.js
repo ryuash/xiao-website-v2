@@ -1,5 +1,5 @@
 import React from 'react'
-import Sketchbook from '@screens/aketchbook'
+import Sketchbook from '@screens/sketchbook'
 
 export default () => {
   return (
