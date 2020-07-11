@@ -9,7 +9,8 @@ const theme = {
     darkYellow: '#efdc49',
   },
   nav: {
-    height: '100px'
+    mobileHeight: '50px',
+    height: '75px'
   },
   width: {
     maxWidth: '1024px',
