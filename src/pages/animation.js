@@ -1,8 +1,8 @@
 import React from 'react'
-import Home from '@screens/home'
+import Animation from '@screens/Animation'
 
 export default () => {
   return (
-    <Home />
+    <Animation />
   )
 }

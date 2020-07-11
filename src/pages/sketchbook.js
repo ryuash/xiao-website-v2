@@ -1,8 +1,8 @@
 import React from 'react'
-import Home from '@screens/home'
+import Sketchbook from '@screens/Sketchbook'
 
 export default () => {
   return (
-    <Home />
+    <Sketchbook />
   )
 }

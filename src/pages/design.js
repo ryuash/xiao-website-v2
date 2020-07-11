@@ -1,8 +1,8 @@
 import React from 'react'
-import Home from '@screens/home'
+import Design from '@screens/Design'
 
 export default () => {
   return (
-    <Home />
+    <Design />
   )
 }
