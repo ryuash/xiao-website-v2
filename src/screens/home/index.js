@@ -13,7 +13,7 @@ import {
   ImgCSS,
 } from './styles'
 
-const Home = () => {
+const Home = (props) => {
   const {
     about,
     title,
@@ -29,6 +29,7 @@ const Home = () => {
     <Layout
       title={title}
       hideFooter
+      {...props}
     >
       <HomeContainerCSS>
         <ProfileContainerCSS>
@@ -46,7 +47,7 @@ const Home = () => {
             <ContactContainerTextCSS>
               {contactOne} <span className="bold">{email}</span> {contactTwo}
             </ContactContainerTextCSS>
-            <SocialMediaContainerCSS>
+            {/* <SocialMediaContainerCSS>
               <a
                 href={linkedin}
                 target="_blank"
@@ -54,7 +55,7 @@ const Home = () => {
               >
                 <LinkedInIcon />
               </a>
-            </SocialMediaContainerCSS>
+            </SocialMediaContainerCSS> */}
           </AboutContainerCSS>
         </ProfileContainerCSS>
         <Footer />

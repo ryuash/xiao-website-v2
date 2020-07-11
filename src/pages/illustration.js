@@ -1,8 +1,10 @@
 import React from 'react'
 import Illustrations from '@screens/illustration'
 
-export default () => {
+export default (props) => {
   return (
-    <Illustrations />
+    <Illustrations
+      {...props}
+    />
   )
 }

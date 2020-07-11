@@ -12,6 +12,7 @@ export const HomeContainerCSS = styled.div`
     align-items: center;
     padding-bottom: 5rem;
     flex-direction: column;
+    margin-top: 0;
   `}
 `
 export const ProfileContainerCSS = styled.div`

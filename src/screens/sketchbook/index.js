@@ -4,7 +4,7 @@ import { useSketchbookHook } from './hooks'
 import { SketchbookCSS } from './styles'
 import { useLightboxHook } from '../../components/lightbox/hooks'
 
-const Design = () => {
+const Design = (props) => {
   const { images, title } = useSketchbookHook()
   const {
     showLightbox,
@@ -29,6 +29,7 @@ const Design = () => {
       )}
       <Layout
         title={title}
+        {...props}
       >
         <SketchbookCSS>
           <Gallery

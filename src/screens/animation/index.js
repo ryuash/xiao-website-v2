@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Animation = () => {
+const Animation = (props) => {
   return (
     <div>
       <h1>animation</h1>

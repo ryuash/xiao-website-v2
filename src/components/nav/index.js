@@ -4,14 +4,14 @@ import { sizes } from '@styles/media'
 import MobileNav from './components/mobile_nav'
 import DesktopNav from './components/desktop_nav'
 
-const Nav = () => {
+const Nav = (props) => {
   const windowSize = useScreenSize()
   if (windowSize.width <= sizes.tablet) {
-    return <MobileNav />
+    return <MobileNav {...props} />
   }
 
   return (
-    <DesktopNav />
+    <DesktopNav {...props} />
   )
 }
 

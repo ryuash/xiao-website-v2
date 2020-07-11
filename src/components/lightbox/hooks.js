@@ -4,7 +4,6 @@ export const useLightboxHook = (images) => {
   const [showLightbox, setShowLightbox] = useState(false)
   const [selectedIdx, setSelectedIdx] = useState(null)
   const handleNextImage = () => {
-    // console.log(selectedIdx + 1)
     setSelectedIdx((selectedIdx + 1) % (images.length))
   }
 
