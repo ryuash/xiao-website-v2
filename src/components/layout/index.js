@@ -20,7 +20,6 @@ const Layout = (props) => {
       <GlobalCSS />
       <SEO title={title} />
       <LayoutCSS>
-        {/* // body */}
         <Nav location={location} />
         {children}
         {!hideFooter && <Footer />}

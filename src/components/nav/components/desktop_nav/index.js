@@ -1,4 +1,5 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import classNames from 'classnames'
 import {
   NavBarCSS,
@@ -10,6 +11,7 @@ import { navItems } from '../../utils'
 
 const DesktopNav = (props) => {
   const {
+    logo,
     location: {
       pathname
     }
@@ -18,7 +20,9 @@ const DesktopNav = (props) => {
   return (
     <NavBarCSS>
       <NavBarLogoCSS>
-        <p>[ Xiao ]</p>
+        <Img
+          fluid={logo}
+        />
       </NavBarLogoCSS>
       <NavItemsContainerCSS>
         {navItems.map((x) => {

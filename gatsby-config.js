@@ -53,5 +53,17 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Xiao\'s Portfolio',
+        short_name: 'Xiao\'s Portfolio',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#ffffff',
+        display: 'minimal-ui',
+        icon: 'src/images/favicon.svg',
+      },
+    },
   ],
 }

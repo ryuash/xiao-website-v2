@@ -20,6 +20,7 @@ const MobileNav = (props) => {
       </NavBarIconCSS>
       <NavBar
         isOpen={isOpen}
+        {...props}
       />
       <NavBody
         isOpen={isOpen}

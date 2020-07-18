@@ -1,19 +1,24 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import {
   NavBarCSS,
   NavBarLogoCSS
 } from './styles'
+
 const MobileNav = (props) => {
   const {
     isOpen,
+    logo
   } = props
-
+  console.log(logo, 'in mo')
   return (
     <NavBarCSS
       isOpen={isOpen}
     >
       <NavBarLogoCSS>
-        <p>[ Xiao ]</p>
+        <Img
+          fluid={logo}
+        />
       </NavBarLogoCSS>
     </NavBarCSS>
   )

@@ -1,14 +1,14 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { Layout, Footer } from '@components'
-import { LinkedInIcon } from '@icons'
+// import { LinkedInIcon } from '@icons'
 import { useHomeHook } from './hooks'
 import {
   ProfileContainerCSS,
   AboutContainerCSS,
   AboutContainerTextCSS,
   ContactContainerTextCSS,
-  SocialMediaContainerCSS,
+  // SocialMediaContainerCSS,
   HomeContainerCSS,
   ImgCSS,
 } from './styles'

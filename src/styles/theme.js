@@ -3,7 +3,7 @@ const theme = {
     primary: 'red',
   },
   nav: {
-    desktopHeight: '90px',
+    desktopHeight: '110px',
     height: '75px'
   },
   width: {

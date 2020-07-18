@@ -15,5 +15,5 @@ export const NavBarCSS = styled(NavContainerCSS)`
 `
 
 export const NavBarLogoCSS = styled.div`
-
+  width: 40px;
 `

@@ -32,12 +32,16 @@ const mixins = {
   `,
   bodyBase: css`
     width: 100%;
-    padding: 1rem 1rem 0;
+    padding: 1rem 1.5rem 0;
     max-width: ${MAX_WIDTH};
     min-height: calc(100vh - ${NAV_HEIGHT});
     margin: 0 auto;
     margin-top: calc(${NAV_HEIGHT} + 1rem);
   `,
+  bodyBaseDesktop: css`
+    min-height: calc(100vh - 110px);
+    margin-top: calc(110px + 1rem);
+  `
 }
 
 export default mixins

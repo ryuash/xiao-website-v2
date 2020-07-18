@@ -8,7 +8,7 @@ const Seo = (props) => {
 
   return (
     <Helmet
-      title={`${title} | Xiao`}
+      title={`${title} - XiaoArts`}
     />
   )
 }
