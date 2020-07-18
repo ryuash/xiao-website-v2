@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link as GastbyLink } from 'gatsby'
 import Img from 'gatsby-image'
 import classNames from 'classnames'
 import {
@@ -19,11 +20,13 @@ const DesktopNav = (props) => {
 
   return (
     <NavBarCSS>
-      <NavBarLogoCSS>
-        <Img
-          fluid={logo}
-        />
-      </NavBarLogoCSS>
+      <GastbyLink to="/">
+        <NavBarLogoCSS>
+          <Img
+            fluid={logo}
+          />
+        </NavBarLogoCSS>
+      </GastbyLink>
       <NavItemsContainerCSS>
         {navItems.map((x) => {
           return (

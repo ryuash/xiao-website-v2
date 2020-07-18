@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link as GastbyLink } from 'gatsby'
 import Img from 'gatsby-image'
 import {
   NavBarCSS,
@@ -15,11 +16,13 @@ const MobileNav = (props) => {
     <NavBarCSS
       isOpen={isOpen}
     >
-      <NavBarLogoCSS>
-        <Img
-          fluid={logo}
-        />
-      </NavBarLogoCSS>
+      <GastbyLink to="/">
+        <NavBarLogoCSS>
+          <Img
+            fluid={logo}
+          />
+        </NavBarLogoCSS>
+      </GastbyLink>
     </NavBarCSS>
   )
 }

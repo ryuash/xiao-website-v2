@@ -7,12 +7,9 @@ const { nav } = theme
 export const HomeContainerCSS = styled.div`
   ${mixins.bodyBase}
   ${media.tablet`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5rem;
-    flex-direction: column;
-    margin-top: 0;
+    min-height: initial;
+    margin-top: calc(110px + 1rem);
+    height: calc(100vh - calc(110px + 1rem));
   `}
 `
 export const ProfileContainerCSS = styled.div`
