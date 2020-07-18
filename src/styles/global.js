@@ -7,6 +7,10 @@ import { normalize } from 'styled-normalize'
 
 const GlobalCSS = createGlobalStyle`
   ${normalize}
+  @font-face {
+    font-family: 'Nunito';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+  }
 
   html {
     font-size: 16px;
@@ -33,6 +37,7 @@ const GlobalCSS = createGlobalStyle`
     overflow-x: hidden;
     font-weight: 300;
     line-height: 1.5;
+    font-family: 'Nunito', sans-serif;
   }
 
   h1,
