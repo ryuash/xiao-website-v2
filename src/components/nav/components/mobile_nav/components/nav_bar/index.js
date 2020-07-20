@@ -11,7 +11,6 @@ const MobileNav = (props) => {
     isOpen,
     logo
   } = props
-  console.log(logo, 'in mo')
   return (
     <NavBarCSS
       isOpen={isOpen}

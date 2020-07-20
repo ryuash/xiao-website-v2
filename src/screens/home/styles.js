@@ -8,8 +8,8 @@ export const HomeContainerCSS = styled.div`
   ${mixins.bodyBase}
   ${media.tablet`
     min-height: initial;
-    margin-top: calc(110px + 1rem);
-    height: calc(100vh - calc(110px + 1rem));
+    margin-top: calc(90px + 1rem);
+    height: calc(100vh - calc(90px + 1rem));
   `}
 `
 export const ProfileContainerCSS = styled.div`

@@ -39,8 +39,8 @@ const mixins = {
     margin-top: calc(${NAV_HEIGHT} + 1rem);
   `,
   bodyBaseDesktop: css`
-    min-height: calc(100vh - 110px);
-    margin-top: calc(110px + 1rem);
+    min-height: calc(100vh - 90px);
+    margin-top: calc(90px + 1rem);
   `
 }
 

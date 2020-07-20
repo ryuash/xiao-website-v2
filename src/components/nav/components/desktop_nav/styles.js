@@ -11,8 +11,7 @@ export const NavBarCSS = styled(NavContainerCSS)`
   z-index: 5;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
   padding: 1rem;
 `
 

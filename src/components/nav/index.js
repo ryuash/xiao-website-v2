@@ -8,12 +8,12 @@ import { useNavHook } from './hooks'
 const Nav = (props) => {
   const { logo } = useNavHook()
   const windowSize = useScreenSize()
-  if (windowSize.width <= sizes.tablet) {
-    return <MobileNav logo={logo} {...props} />
+  if (windowSize && windowSize.width > sizes.tablet) {
+    return <DesktopNav logo={logo} {...props} />
   }
 
   return (
-    <DesktopNav logo={logo} {...props} />
+    <MobileNav logo={logo} {...props} />
   )
 }
 
