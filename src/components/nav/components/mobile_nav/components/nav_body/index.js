@@ -4,7 +4,6 @@ import { useTransition } from 'react-spring'
 import {
   NavBodyCSS,
   NavItemCSS,
-  DisplayCSS
 } from './styles'
 import { navItems } from '../../../../utils'
 import { Link } from '../../../../styles'
@@ -32,23 +31,21 @@ const NavBody = (props) => {
   })
 
   return (
-    <DisplayCSS>
-      {transitions.map(({ item, key, props }) =>
-        item && (
-          <NavBodyCSS style={props}>
-            {navItems.map((x) => {
-              return (
-                <NavItemCSS key={x.title}>
-                  <Link to={x.link} className={classNames({ active: pathname === x.link })}>
-                    {x.title}
-                  </Link>
-                </NavItemCSS>
-              )
-            })}
-          </NavBodyCSS>
-        )
-      )}
-    </DisplayCSS>
+    transitions.map(({ item, key, props }) =>
+      item && (
+        <NavBodyCSS style={props} key={key}>
+          {navItems.map((x) => {
+            return (
+              <NavItemCSS key={x.title}>
+                <Link to={x.link} className={classNames({ active: pathname === x.link })}>
+                  {x.title}
+                </Link>
+              </NavItemCSS>
+            )
+          })}
+        </NavBodyCSS>
+      )
+    )
   )
 }
 
