@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import { animated } from 'react-spring'
-import { theme, mixins } from '@styles'
-
-const { colors } = theme
+import { media } from '@styles'
 
 export const NavBodyCSS = styled(animated.div)`
   position: fixed;
@@ -19,4 +17,10 @@ export const NavBodyCSS = styled(animated.div)`
 
 export const NavItemCSS = styled.div`
   margin: 0.5rem 0;
+`
+
+export const DisplayCSS = styled.span`
+  ${media.tablet`
+  display: none;
+  `}
 `

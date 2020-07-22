@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { media } from '@styles';
 
 export const NavBarIconCSS = styled.div`
   width: 27px;
@@ -33,4 +34,8 @@ export const NavBarIconCSS = styled.div`
       }
     `
   ) : '')}
+
+  ${media.tablet`
+      display: none;
+  `}
 `

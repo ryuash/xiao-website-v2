@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { media } from '@styles';
 import { NavContainerCSS } from '../../../../styles'
 
 
@@ -12,6 +13,10 @@ export const NavBarCSS = styled(NavContainerCSS)`
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+
+  ${media.tablet`
+    display: none;
+  `}
 `
 
 export const NavBarLogoCSS = styled.div`
