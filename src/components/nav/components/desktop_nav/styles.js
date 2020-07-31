@@ -7,7 +7,7 @@ import { NavContainerCSS } from '../../styles'
 export const NavBarCSS = styled(NavContainerCSS)`
   display: none;
   ${media.tablet`
-    background: white;
+    background: transparent;
     position: fixed;
     top: 0;
     width: 100%;
