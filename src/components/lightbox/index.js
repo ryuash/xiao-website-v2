@@ -9,7 +9,6 @@ import {
   ImageContainerCSS,
   CloseCSS,
   IconContainerCSS,
-  ImgOverrideCSS
 } from './styles'
 
 const Lightbox = (props) => {
@@ -31,22 +30,12 @@ const Lightbox = (props) => {
   }
 
   return (
+
     <LightboxCSS onClick={toggleLightbox}>
       <CloseCSS>
         <CloseIcon />
       </CloseCSS>
-      <ImageContainerCSS>
-        <span onClick={handleImageClick}>
-          <ImgOverrideCSS
-            imgStyle={{
-              objectFit: 'contain',
-              width: '100%',
-              maxHeight: '80vh',
-            }}
-            fluid={images[selectedIdx]}
-          />
-        </span>
-      </ImageContainerCSS>
+      <ImageContainerCSS onClick={handleImageClick} src={images[selectedIdx].src} />
       <IconContainerCSS>
         <span onClick={(e) => handleFutureClick(e, handlePrevImage)}>
           <BackwardIcon />

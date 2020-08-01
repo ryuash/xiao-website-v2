@@ -15,10 +15,10 @@ const Design = (props) => {
     setSelectedIdx,
     handleOnClick,
   } = useLightboxHook(images)
-
+  console.log(images, 'images here?')
   return (
     <>
-      {!!showLightbox && (
+      {showLightbox && selectedIdx !== null && (
         <Lightbox
           images={images}
           toggleLightbox={toggleLightbox}

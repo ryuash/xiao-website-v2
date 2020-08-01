@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import GatsbyImage from 'gatsby-image'
 import { media } from '@styles'
 
 const ICON_COLOR = '#ffffff'
@@ -7,34 +6,35 @@ const ICON_OPACITY = 0.4
 
 export const LightboxCSS = styled.div`
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   z-index: 10;
   position: fixed;
   top: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem;
+`
+
+export const ImageContainerCSS = styled.img`
   ${media.tablet`
-    padding: 2rem 0;
+    width: auto;
+    max-width: 80vw;
+    max-height: 80vh;
+    display: inline-block;
   `}
 `
 
-export const ImageContainerCSS = styled.div`
-  padding: 1rem;
-  max-height: 80vh;
-  width: 100%;
-`
-
-export const CloseCSS = styled.span`
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 0.5rem;
+export const CloseCSS = styled.div`
+  align-self: flex-end;
 
   svg {
     stroke: ${ICON_COLOR};
     width: 35px;
+    margin: 0;
     opacity: ${ICON_OPACITY};
     transition: 0.2s;
 
@@ -45,29 +45,16 @@ export const CloseCSS = styled.span`
   }
 `
 export const IconContainerCSS = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-
   svg {
     stroke: ${ICON_COLOR};
     width: 15px;
-    margin: 0 0.3rem;
     opacity: ${ICON_OPACITY};
     transition: 0.3s;
-
+    height: 40px;
+    margin: 0 0.5rem;
     &:hover {
       cursor: pointer;
       opacity: 1;
     }
   }
-`
-export const ImgOverrideCSS = styled(GatsbyImage)`
-  ${media.tablet`
-    width: auto;
-  `}
 `

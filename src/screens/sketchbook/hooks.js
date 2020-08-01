@@ -16,8 +16,10 @@ export const useSketchbookHook = () => {
         edges {
           node {
             childImageSharp {
-              fluid(maxWidth: 1400) {
+              fluid(maxHeight: 500) {
                 ...GatsbyImageSharpFluid
+                presentationWidth
+                presentationHeight
               }
             }
           }
